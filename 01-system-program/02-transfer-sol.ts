@@ -2,7 +2,8 @@ import * as Web3 from '@solana/web3.js';
 import base58 from 'bs58'
 
 async function main() {
-    const decoded = base58.decode('45FEi9fDTSxTYtrhCW4GHXDwz8pUcY3PD56Cz89qotKywuUPKmPNRqu4F582ZUreyToEHW3bTLcyGoGS9cu7ax3L')
+
+    const decoded = base58.decode('PRIVATE_KEY')
     const keyPair = Web3.Keypair.fromSecretKey(decoded)
 
     const publicKeyFrom = new Web3.PublicKey('8gWy1tAcoNjAfU7B5pkh7gxLWZX8RAy2Qy93Y1bzomV4');
